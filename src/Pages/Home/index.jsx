@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Bell, RefreshCw, List, Sparkles, FileText, ScanSearch, BellRing, Bookmark, ChevronRight } from 'lucide-react';
+import { Bell, RefreshCw, List, Sparkles, FileText, ScanSearch, BellRing, Bookmark, ChevronRight, MessageCircle } from 'lucide-react';
 import useHome from '../../hooks/useHome';
 import useBookmarks from '../../hooks/useBookmarks';
 import PolicyCard from '../../Components/PolicyCard';
@@ -47,6 +47,7 @@ const MENU = [
   { label: '사진분석', path: '/ocr', Icon: ScanSearch },
   { label: '지원금알림', path: '/notification', Icon: BellRing },
   { label: '지역프로그램', path: '/region', Icon: Bookmark },
+  { label: '정책챗봇', path: '/chat', Icon: MessageCircle },
 ];
 
 // 홈에서는 신청 가능 여부를 판정하지 않고 정책을 그대로 보여주므로, 상시 여부만 배지로 표시한다.

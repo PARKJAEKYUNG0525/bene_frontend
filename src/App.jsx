@@ -5,6 +5,7 @@ import HomePage from './Pages/Home';
 import CategoryPage from './Pages/Category';
 import RecommendationPage from './Pages/Recommendation';
 import RecommendationProfilePage from './Pages/Recommendation/Profile';
+import ChatPage from './Pages/Chat';
 import OCRPage from './Pages/OCR';
 import SummaryPage from './Pages/Summary';
 import NotificationPage from './Pages/Notification';
@@ -73,6 +74,14 @@ export default function App() {
           element={
             <PrivateRoute>
               <RecommendationPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/chat"
+          element={
+            <PrivateRoute>
+              <ChatPage />
             </PrivateRoute>
           }
         />
